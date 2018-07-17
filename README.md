@@ -45,3 +45,7 @@ URL: http://localhost:5000/api/banners?skip=0&take=2
 
 6. GET RENDERING
 URL: http://localhost:5000/api/banners/render/2
+
+
+## Loading testing
+run dotnet LoadTesting.dll Run <postThreadsCount> <getThreadsCount> <operationsPerSecondForEachThread> for simple load testing

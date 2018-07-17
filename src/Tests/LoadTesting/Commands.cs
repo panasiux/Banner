@@ -34,8 +34,12 @@ namespace LoadTesting
                 var threadNumber = i;
                 working.Add(Task.Run(async () =>
                 {
+                    var counter = 0;
                     while (true)
                     {
+                        counter++;
+                        if(counter % 100 == 0)
+                            Console.WriteLine("alive");
                         using (var client = new HttpClient())
                             await Post(client, GenerateBanner());
 
@@ -52,7 +56,6 @@ namespace LoadTesting
                 {
                     while (true)
                     {
-                        
                         using (var client = new HttpClient())
                             await Get(client, _random.Next(1, _idCounter));
                         _stat.GetCount++;

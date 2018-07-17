@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LoadTesting": {
+      "commandName": "Project",
+      "commandLineArgs": "Run 1 1 1"
+    }
+  }
+}

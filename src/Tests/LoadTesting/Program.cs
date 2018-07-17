@@ -1,4 +1,5 @@
 ﻿using System;
+using CommandDotNet;
 
 namespace LoadTesting
 {
@@ -6,7 +7,8 @@ namespace LoadTesting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var appRunner = new AppRunner<Commands>();
+            appRunner.Run(args);
         }
     }
 }

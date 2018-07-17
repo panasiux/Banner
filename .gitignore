@@ -27,3 +27,4 @@
 /src/BannerWebApp/logs
 /src/Tests/LoadTesting/obj/Debug/netcoreapp2.1
 /src/Tests/LoadTesting/obj
+/src/Tests/LoadTesting/bin/Debug/netcoreapp2.1

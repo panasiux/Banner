@@ -6,7 +6,6 @@ namespace MongoBannersContext
     public class MongoBannersContext
     {
         private readonly IMongoDatabase _database = null;
-        private readonly MongoClient _mongoClient;
 
         private const string BannersName = "Banners";
 
@@ -17,8 +16,8 @@ namespace MongoBannersContext
 
         public MongoBannersContext(string connectionString, string dbName)
         {
-            _mongoClient = new MongoClient(connectionString);
-            _database = _mongoClient.GetDatabase(dbName);
+            var mongoClient = new MongoClient(connectionString);
+            _database = mongoClient.GetDatabase(dbName);
         }
 
         public IMongoCollection<BannerDoc> Banners

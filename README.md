@@ -6,7 +6,8 @@
 1. install & run mongodb (go to install dir, run mongod, remember port)
 2. Configure mongodb connection string: check appsetting.json file (Db->connectionString)
 3. Configure web service url in hosting.json
-4. Run web service in console 'dotnet BannerWebApp.dll'
+4. dotnet build in src dir
+5. Run web service in console 'dotnet BannerWebApp.dll'
 
 
 ## REST Samples (e.g. for postman):

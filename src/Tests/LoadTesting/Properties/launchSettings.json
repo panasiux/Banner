@@ -2,7 +2,7 @@
   "profiles": {
     "LoadTesting": {
       "commandName": "Project",
-      "commandLineArgs": "Run 1 1 1"
+      "commandLineArgs": "Run 1 0 0 1"
     }
   }
 }

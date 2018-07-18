@@ -3,6 +3,7 @@
 .NET Core web service and utils around it
 
 ## How to run
+0. Download and install .net core sdk
 1. install & run mongodb (go to install dir, run mongod, remember port)
 2. Configure mongodb connection string: check appsetting.json file (Db->connectionString)
 3. Configure web service url in hosting.json

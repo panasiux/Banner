@@ -50,4 +50,6 @@ URL: http://localhost:5000/api/banners/render/2
 
 ## Loading testing
 For simple load testing run:
+```cmd
 dotnet LoadTesting.dll Run postThreadsCount getThreadsCount putThreadsCount operationsPerSecondForEachThread 
+```

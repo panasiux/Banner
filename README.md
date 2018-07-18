@@ -4,15 +4,17 @@
 
 ## How to run
 0. Download and install .net core sdk
-1. install & run mongodb (go to install dir, run mongod, remember port)
+1. Install & run mongodb (go to install dir, run mongod, remember port)
 2. Configure mongodb connection string: check appsetting.json file (Db->connectionString)
 3. Configure web service url in hosting.json
-4. Run web service in console 'dotnet BannerWebApp.dll'
+4. Run 'dotnet build' in src dir
+5. Run web service in console 'dotnet BannerWebApp.dll'
 
 
 ## REST Samples (e.g. for postman):
 Consider server url is 'localhost:5000;
-1. POST 
+1. POST
+
 URL: http://localhost:5000/api/banners
 
 BODY:
@@ -26,8 +28,7 @@ BODY:
 }
 ```
 
-2. PUT
-URL: http://localhost:5000/api/banners/5
+2. PUT (URL: http://localhost:5000/api/banners/5)
 
 ``` json
 BODY:
@@ -38,15 +39,14 @@ BODY:
 }
 ```
 
-3. DELETE
-URL: http://localhost:5000/api/banners/5
+3. DELETE (URL: http://localhost:5000/api/banners/5)
 
-4. GET ALL
-URL: http://localhost:5000/api/banners?skip=0&take=2
+4. GET ALL (URL: http://localhost:5000/api/banners?skip=0&take=2)
 
-6. GET RENDERING
-URL: http://localhost:5000/api/banners/render/2
+6. GET RENDERING (URL: http://localhost:5000/api/banners/render/2)
 
-
-## Loading testing
-run dotnet LoadTesting.dll Run <postThreadsCount> <getThreadsCount> <putThreadsCount> <operationsPerSecondForEachThread> for simple load testing
+## Load testing
+For simple load testing run:
+```cmd
+dotnet LoadTesting.dll Run postThreadsCount getThreadsCount putThreadsCount operationsPerSecondForEachThread 
+```

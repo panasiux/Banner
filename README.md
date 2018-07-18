@@ -12,7 +12,7 @@
 
 
 ## REST Samples (e.g. for postman):
-Consider server url is 'localhost:5000;
+Consider server url is 'localhost:5000'
 1. POST
 
 URL: http://localhost:5000/api/banners
